@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центр Бубновского в Уфе - Кинезитерапия и реабилитация</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <h1>Центр Бубновского</h1>
+                    <span>в Уфе</span>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#about">О центре</a></li>
+                        <li><a href="#methods">Методика</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#doctors">Врачи</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <a href="tel:+79471234567" class="phone">+7 (947) 123-45-67</a>
+                    <button class="btn btn-primary" onclick="openModal()">Записаться</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h2>Вернем подвижность вашим суставам</h2>
+                <p>Уникальная методика лечения опорно-двигательного аппарата без операций и лекарств</p>
+                <div class="hero__buttons">
+                    <button class="btn btn-large" onclick="openModal()">Бесплатная консультация</button>
+                    <button class="btn btn-outline" onclick="scrollToSection('about')">Узнать больше</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О нашем центре</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>Мы специализируемся на лечении заболеваний опорно-двигательного аппарата по методу профессора Бубновского. Наш центр оснащен современным оборудованием и предлагает индивидуальный подход к каждому пациенту.</p>
+                    <ul>
+                        <li>Более 10 лет успешной работы</li>
+                        <li>Квалифицированные специалисты</li>
+                        <li>Индивидуальные программы лечения</li>
+                        <li>Современное оборудование</li>
+                    </ul>
+                </div>
+                <div class="about__image">
+                    <img src="images/about-center.jpg" alt="Центр Бубновского в Уфе">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methods Section -->
+    <section id="methods" class="methods">
+        <div class="container">
+            <h2>Методика Бубновского</h2>
+            <div class="methods__grid">
+                <div class="method__card">
+                    <h3>Кинезитерапия</h3>
+                    <p>Лечение движением с использованием специальных тренажеров</p>
+                </div>
+                <div class="method__card">
+                    <h3>Суставная гимнастика</h3>
+                    <p>Восстановление подвижности суставов через специальные упражнения</p>
+                </div>
+                <div class="method__card">
+                    <h3>Криотерапия</h3>
+                    <p>Лечение холодом для снятия боли и воспаления</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3>Центр Бубновского в Уфе</h3>
+                    <p>© 2024 Все права защищены</p>
+                </div>
+                <div class="footer__contacts">
+                    <p>г. Уфа, ул. Примерная, 123</p>
+                    <p>Телефон: +7 (947) 123-45-67</p>
+                    <p>Email: info@bubnovsky-ufa.ru</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close" onclick="closeModal()">&times;</span>
+            <h2>Записаться на консультацию</h2>
+            <form class="modal__form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
